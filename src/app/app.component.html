@@ -2,7 +2,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="location==='recipe'"></app-recipes>
+      <!-- using custom directive -->
+      <app-recipes *appIf="location==='recipe'"></app-recipes>
       <app-shopping-list *ngIf="location==='shopping-list'"></app-shopping-list>
     </div>
   </div>
