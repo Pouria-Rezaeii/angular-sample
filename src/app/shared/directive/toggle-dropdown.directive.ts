@@ -12,7 +12,5 @@ export class ToggleDropdownDirective implements OnInit {
   }
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.isOpen);
-  }
+  ngOnInit(): void {}
 }

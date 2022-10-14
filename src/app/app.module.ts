@@ -12,6 +12,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { HighlightOnHoverDirective } from './shared/directive/highlight-on-hover.directive';
 import { IfDirective } from './shared/directive/if.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { ToggleDropdownDirective } from './shared/directive/toggle-dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,10 @@ import { IfDirective } from './shared/directive/if.directive';
     ShoppingEditComponent,
     IfDirective,
     HighlightOnHoverDirective,
+    ToggleDropdownDirective,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

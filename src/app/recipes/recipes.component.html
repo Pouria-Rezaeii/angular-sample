@@ -1,17 +1,10 @@
 <div style="border:solid 1px #ddd; padding:3rem 1rem 1rem; border-radius:8px; margin-bottom:2rem">
   <div class="row">
     <div class="col-md-5">
-      <!-- another way, directly in the template -->
-      <!-- <app-recipe-list (onRecipeSelected)="selectedRecipe=$event"></app-recipe-list> -->
-      <app-recipe-list (onRecipeSelected)="onRecipeSelected($event)"></app-recipe-list>
+      <app-recipe-list></app-recipe-list>
     </div>
     <div class="col-md-7">
-      <app-recipe-detail *ngIf="selectedRecipe; else noRecipe" [recipe]="selectedRecipe"></app-recipe-detail>
-      <ng-template #noRecipe>
-        <h3>
-          Please select a recipe.
-        </h3>
-      </ng-template>
+      <app-recipe-detail></app-recipe-detail>
     </div>
   </div>
 </div>
